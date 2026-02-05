@@ -13,6 +13,11 @@ public class DataBaseManager { // son FINAL porque su valor es fijo y no se pued
     private static final String URL = dotenv.get("DB_URL");
     private Connection conexion; // =null; por defecto, esta variable, es NULL, poner NULL es redundante
           
+    
+    public Connection getConnection(){
+        return conexion;
+    }
+     
     public void conectar() {
         try {
             conexion = DriverManager.getConnection(URL, USER, PASS);
@@ -41,3 +46,4 @@ public class DataBaseManager { // son FINAL porque su valor es fijo y no se pued
     
     
 }
+

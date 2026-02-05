@@ -1,3 +1,10 @@
 dbManager\DataBaseManager.class
-dbManager\NewMain.class
+Main.class
+Models\Genero.class
+Models\Clasificacion.class
+Models\Filmografia.class
+Models\Factura.class
+Models\Reparto.class
 com\mycompany\mavenproject1\Mavenproject1.class
+Models\Cuenta.class
+DAOs\FilmografiaDAO.class

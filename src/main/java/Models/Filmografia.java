@@ -7,19 +7,23 @@ public class Filmografia {
     
     private int id;
     private String titulo;
-    private Date fecha;
+    private Date fecha_estreno;
     private String sinopsis;
     private int id_pais;
-    private int id_clasificacion;
+    private int clasificacion_id;
+    private int pais_id;
 
-    public Filmografia(int id, String titulo, Date fecha, String sinopsis, int id_pais, int id_clasificacion) {
+    public Filmografia(int id, String titulo, Date fecha_estreno, String sinopsis, int pais_id, int clasificacion_id) {
         this.id = id;
         this.titulo = titulo;
-        this.fecha = fecha;
+        this.fecha_estreno = fecha_estreno;
         this.sinopsis = sinopsis;
-        this.id_pais = id_pais;
-        this.id_clasificacion = id_clasificacion;
+        this.pais_id = pais_id;
+        this.clasificacion_id = clasificacion_id;
     }
+    
+   public Filmografia() {
+     }
 
     public int getId() {
         return id;
@@ -37,12 +41,12 @@ public class Filmografia {
         this.titulo = titulo;
     }
 
-    public Date getFecha() {
-        return fecha;
+    public Date getFecha_estreno() {
+        return fecha_estreno;
     }
 
-    public void setFecha(Date fecha) {
-        this.fecha = fecha;
+    public void setFecha_estreno(Date fecha_estreno) {
+        this.fecha_estreno = fecha_estreno;
     }
 
     public String getSinopsis() {
@@ -53,27 +57,27 @@ public class Filmografia {
         this.sinopsis = sinopsis;
     }
 
-    public int getId_pais() {
-        return id_pais;
+    public int getPais_id() {
+        return pais_id;
     }
 
-    public void setId_pais(int id_pais) {
-        this.id_pais = id_pais;
+    public void setPais_id(int pais_id) {
+        this.pais_id = pais_id;
     }
 
-    public int getId_clasificacion() {
-        return id_clasificacion;
+    public int getClasificacion_id() {
+        return clasificacion_id;
     }
 
-    public void setId_clasificacion(int id_clasificacion) {
-        this.id_clasificacion = id_clasificacion;
+    public void setClasificacion_id(int clasificacion_id) {
+        this.clasificacion_id = clasificacion_id;
     }
 
     @Override
     public String toString() {
-        return "Filmografia{" + "id=" + id + ", titulo=" + titulo + ", fecha=" + fecha + ", sinopsis=" + sinopsis + ", id_pais=" + id_pais + ", id_clasificacion=" + id_clasificacion + '}';
+        return "Filmografia{" + "id=" + id + ", titulo=" + titulo + ", fecha=" + fecha_estreno + ", sinopsis=" + sinopsis + ", pais_id=" + pais_id + ", clasificacion_id=" + clasificacion_id;
     }
+
  
     
-
 }
